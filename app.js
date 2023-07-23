@@ -5,12 +5,14 @@ const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
 const filter = document.querySelector(".filter-todo");
 
+
 // Event Listeners
 
 document.addEventListener("DOMContentLoaded", getTodos);
 todoButton.addEventListener("click", addTodo);
 todoList.addEventListener("click", deleteCheck);
 filter.addEventListener("change", filterTodo);
+
 
 // Functions
 
@@ -25,6 +27,7 @@ function createComponents(value) {
     newTodo.classList.add("todo-item");
     todoDiv.appendChild(newTodo);
 
+    
     // Create Completed button
     const completedButton = document.createElement("button");
     completedButton.innerHTML = "<i class='fas fa-check'></i>";

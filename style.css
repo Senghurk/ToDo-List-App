@@ -6,11 +6,13 @@
     box-sizing: border-box;
 }
 
+
 *:focus,
 *:active {
     outline: 0 !important;
     box-shadow: 0 !important;
 }
+
 
 body {
     background: rgb(68, 100, 173);
